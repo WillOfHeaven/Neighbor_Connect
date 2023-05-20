@@ -1,0 +1,284 @@
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script:wght@500&family=Montserrat:ital,wght@1,100&family=Noto+Serif+Ahom&family=Paprika&family=Playfair+Display&family=Poppins:wght@300&family=Roboto:wght@300&family=Rubik+Puddles&family=Tajawal:wght@200&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+    color:#06ce06;
+}
+button{
+    cursor: pointer;
+    transition: all ease 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+button:hover{
+    transform: scale(1.2);
+}
+input:focus{
+    outline: none;
+}
+.home{
+    position: relative;
+    /* padding-top: 4rem; */
+}
+.home #fix{
+    width:100%;
+    position: fixed;
+}
+.home nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    /* position: fixed; */
+    width:100%;
+    z-index: 1;
+    background-color: #fcde67;
+}
+.home #left, .home #right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+}
+.home #left h1{
+    color:#5bcc5b;
+    font-family: 'Rubik Puddles', cursive;
+}
+.home #mid{
+    display: flex;
+    align-items: center;
+    padding:0.5rem;
+    width:60%;
+    border-radius: 1rem;
+    gap:1rem;
+    background-color: aliceblue;
+}
+
+.home nav input{
+    padding:0.1rem;
+    height:100%;
+    border-radius: 0.5rem;
+    border:none;
+    width:15rem;
+    font-size: 1.2rem;
+    background-color: aliceblue;
+}
+.home nav input:focus{
+    outline: none;
+}
+.home #icon{
+    font-size: 2rem;
+    color: #5bcc5b;
+    cursor: pointer;
+}
+.home #tag_line{
+    padding-top: 28rem;
+    padding:0.5rem;
+    margin-top: 1rem;
+    /* position: relative; */
+    /* position: fixed; */
+    background-color: aliceblue;
+}
+.home #con{
+    display: flex;
+    padding-top: 8rem;
+    justify-content: space-around;
+}
+.home #con #m{
+    /* padding:1rem; */
+     width:30%;
+     gap:1rem;
+}
+.home #con #l #fixed{
+    position: fixed;
+    /* border: 1px solid green; */
+}
+.home #con #r,.home #con #l{
+    display: flex;
+    position: relative;
+    /* justify-content: center; */
+    align-items: baseline;
+    flex-direction: column;
+     width:25%;
+     padding:2rem;
+
+}
+.home #con #l #headings{
+    display: flex;
+    padding:0.4rem;
+    gap: 0.4em;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.home #con #l #headings:hover{
+    background-color: aliceblue;
+}
+.home #con #l button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width:7rem;
+    background-color: #5bcc5b;
+    border:none;
+    border-radius: 0.8rem;
+    color: #fcde67;
+    font-size: 1.1rem;
+}
+/* middle */
+.home #con #m{
+    margin:0rem 1rem; 
+    border-radius: 0.4rem;
+    height: max-content;
+    gap:1rem;
+    
+    /* border:1px solid gray; */
+}
+.home #con #m #posted #upper{
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+
+}
+.home #con #m #posted #para{
+    margin-top:1rem;
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+    text-align: justify;
+}
+.home #con #m #posted #upper #details{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+.home #con #m #posted #upper #details #name{
+    font-weight: 500;
+}
+.home #con #m #posted #upper #details #address{
+    font-size: 0.8rem;
+    color: rgb(159, 157, 157);
+}
+.home #con #m #posted #upper #dot{
+    font-size: 1.8rem;
+    cursor: pointer;
+    
+}
+.home #con #m #posted #upper span{
+    font-size: 1.5rem;
+    background-color: #06ce06;
+    color:#fcde67;
+    height:max-content;
+    width:2.5rem;
+    padding: 0.2rem;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.home #con #m #posted #comment span{
+    font-size: 1.5rem;
+    background-color: #06ce06;
+    color:#fcde67;
+    height:max-content;
+    width:2.5rem;
+    padding: 0.2rem;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+/*  bottom */
+.home #con #m #posted #bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.home #con #m #posted #bottom #likes{
+    display: flex;
+    gap:0.2rem;
+    
+}
+.home #con #m #posted #bottom #likes #heart{
+    background-color: pink;
+    border-radius: 50%;
+    height:1.5rem;
+    width:1.4rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+.home #con #m #posted #bottom #options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.3rem;
+    cursor: pointer;
+}
+.home #con #m #posted #bottom #right{
+    gap:1rem;
+}
+.home #con #m #posted #bottom #options p{
+    font-size: 0.8rem;
+   
+    /* border:1px solid red; */
+}
+.home #con #m #posted #bottom #options #choose{
+    font-size: 0.8rem;
+    /* border:1px solid red; */
+}
+/* ====================comment============================= */
+.home #con #m #posted #comment{
+    display: flex;
+    justify-content: space-around;
+    /* border:1px solid black; */
+    gap:1rem;
+}
+.home #con #m #posted #comment input{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #fcde67;
+    border:none;
+    width:80%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.home #con #m #posted{
+    margin:2rem 0rem;
+    padding:1rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+hr{
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 800px){
+    .home #left{
+        display: none;
+    }
+    .home #mid{
+        border-radius: 1rem;
+        width:80%;
+    }
+    .home nav input{
+        width:80%;
+        padding:0.5rem;
+    }
+    .home #con #m #posted #upper span{
+        padding:0.2rem;
+        width:2.5rem;
+    }
+    
+    .home #con #l,.home #con #r{
+        display: none;
+    }
+    .home #con #m{
+        width:100%;
+    }
+}
