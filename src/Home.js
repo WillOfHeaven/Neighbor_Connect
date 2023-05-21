@@ -16,12 +16,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import ShareIcon from '@mui/icons-material/Share';
 export const Home = () => {
-    function noti() {
-        <Notification />
-    }
-    function home() {
-        <Home />
-    }
+    
   return (
     <div class="home">
         <section id='fix'>
@@ -41,9 +36,9 @@ export const Home = () => {
                 <icon></icon>
             </div>
         </nav>
-        <div id='tag_line'>
+        {/* <div id='tag_line'>
             <p>Want to see more?<a href='#'> Verify your account</a> to join this neighbourhood.</p>
-        </div>
+        </div> */}
         </section>
         
         
@@ -52,7 +47,7 @@ export const Home = () => {
         <div id='fixed'>
         <div id='headings'>
          <HomeIcon />
-         <p onClick={home}>Home</p>
+         <p>Home</p>
          </div>
          <div id='headings'>
          <MapIcon />
@@ -60,7 +55,7 @@ export const Home = () => {
          </div>
          <div id='headings'>
          <CircleNotificationsIcon />
-         <p onClick={noti} >Notification</p>
+         <p>Notification</p>
          </div>
          <div id='headings'>
          <EmailIcon />

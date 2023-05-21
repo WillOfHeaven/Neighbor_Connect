@@ -1,0 +1,196 @@
+
+*{
+    box-sizing: border-box;
+}
+.post{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5bcc5b;
+}
+input,textarea{
+    border:none;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: #5bcc5b;
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+.post button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width:7rem;
+    background-color: #5bcc5b;
+    border:none;
+    border-radius: 0.8rem;
+    color: #fcde67;
+    font-size: 1.1rem;
+}
+textarea{
+    resize: none;
+}
+.post form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcde67;
+    /* height:80%;
+    width:80%; */
+    /* color:#5bccf6; */
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    /* flex-direction: column; */
+}
+.post form h4{
+    color:red;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.post form #left,.post form #right{
+    
+    width:50%;
+    /* border:1px solid red; */
+    /* border: 1px solid red; */
+    /* display: flex; */
+    padding: 1rem;
+}
+.post form #left #fields{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap:0.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    /* background-color: red; */
+
+}
+.post form #left #fields p{
+    text-align: left;
+    width:5rem;
+    /* background-color: green; */
+}
+.post form #fields span{
+    color:red;
+}
+
+.post form #left input, .post form #left textarea{
+    /* margin-right: 50%; */
+    padding: 0.3rem;
+    width:15rem;
+    background-color: #5bcc5b;
+    border-radius: 0.5rem;
+}
+.post form textarea{
+    height:5rem;
+    
+}
+.post form #left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+/* ===================right side=================== */
+.post form #right{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height:fit-content;
+    align-items: center;
+    gap:1rem;
+    /* border:1px solid red; */
+}
+.post form #right #radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+.post form #right #radio #fields p{
+    font-size: 0.7rem;
+    width: 7rem;
+    text-align: left;
+}
+.post form #right #radio input{
+    height:fit-content;
+    width: fit-content;
+    border-radius: 50%;
+    border: none;
+    
+}
+.post input[type='radio']{
+    accent-color: #5bcc5b;
+    border:none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+
+}
+.post input[type='file']{
+
+}
+.post input[type='radio']:focus{
+    outline: none;
+}
+.post form #right #fields {
+    display: flex;
+    gap:0.5rem;
+    cursor: pointer;
+}
+.post form #right #fields input,.post form #right #fields textarea{
+    padding: 0.3rem;
+}
+.post form #right #fields p{
+    font-size: 1rem;
+    width:7rem;
+    text-align: left;
+}
+.post button{
+    
+}
+@media only screen and (max-width: 700px){
+    .post{
+        height: 100%;
+    }
+    form{
+        /* height:90%; */
+        margin: 2rem 0rem;
+        width:90%;
+        flex-direction: column;
+        background-color: #fcde67;
+    }
+    .post form textarea{
+        height:3rem;
+    }
+    .post form #fields p{
+        text-align: left;
+        width:7rem;
+        /* background-color: green; */
+    }
+    .post form #right,.post form #left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width:100%;
+        
+        /* background-color: aliceblue; */
+    }
+    .post form #left input, .post form #left textarea,.post form #right input, .post form #right textarea{
+        width:7rem;
+    }
+
+}
+@media only screen and (min-width: 700px) and (max-width: 900px){
+    .post form{
+        width:90%;
+    }
+    
+
+}

@@ -2,12 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './Home';
 import Notification from './Notification';
+import Post from './Post';
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+      {/* <Home/> */}
       {/* <Notification /> */}
+      <Post />
     </div>
   );
 }
