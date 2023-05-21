@@ -15,8 +15,18 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import ShareIcon from '@mui/icons-material/Share';
+import {useNavigate} from "react-router-dom";
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 export const Home = () => {
-    
+    const navigate = useNavigate();
+    const [animal, setAnimals] = useState([]);
+
+    useEffect(() => {
+      axios.get('http://localhost:4002/animals')
+        .then(response => setAnimals(response.data))
+        .catch(error => console.error(error));
+    }, []);
   return (
     <div class="home">
         <section id='fix'>
@@ -61,23 +71,35 @@ export const Home = () => {
          <EmailIcon />
          <p>Messages</p>
          </div>
-         <button><AddIcon /><p>Post</p></button>
+          <button onClick={()=>navigate("/post")}><AddIcon /><p>Post</p></button>
         </div>
             </div>
             <div id='m'>
+            {animal.map(animal => (
             <div id='posted'>
                 <div id='upper'>
-                    <span>K</span>
+                    <span>{animal.nameOfPer.charAt(0)}</span>
                     <div id='details'>
-                        <p id='name'>K.M</p>
-                        <p id='address'>Fremont, CA . Edited 1w. 🌐</p>
+                        <p id='name'>{animal.nameOfPer}</p>
+                        <p id='address'>{animal.address}🌐</p>
                     </div>
                      <MoreHorizIcon  id='dot'/>
                 </div>
-                <p id='para'>My daughter just took our dog out for their usual evening walk. 
-                She came home and told me she heard a neighbor beating up his dog
-                 because it barked at my dog when they walked by from the backyard.
-                   What we can do for that dog?  I think the owner should be punished.
+                <p id='para'>
+                    Issue : {animal.issue}
+                    <br></br>
+                    Link_of_nearby_NGO <a href ={animal.url}>Link</a>
+                    <br></br>
+                    Description : {animal.animalName}
+                    <br></br>
+                    Identification : {animal.tagId}
+                    <br></br>
+                    Status : {animal.status}
+                    <br></br>
+                    Date of report : {animal.date}
+                    <br></br>
+                    time : {animal.time}
+
                    </p>
                    <div id='bottom'>
                     <div id='likes'>
@@ -100,88 +122,10 @@ export const Home = () => {
                    </div>
                    <hr></hr>
                    <div id='comment'>
-                   <span>K</span>
+                   <span>{animal.nameOfPer.charAt(0)}</span>
                    <input type='text' placeholder='Add a comment'></input>
                    </div>
-            </div>
-            <div id='posted'>
-                <div id='upper'>
-                    <span>K</span>
-                    <div id='details'>
-                        <p id='name'>K.M</p>
-                        <p id='address'>Fremont, CA . Edited 1w. 🌐</p>
-                    </div>
-                     <MoreHorizIcon  id='dot'/>
-                </div>
-                <p id='para'>My daughter just took our dog out for their usual evening walk. 
-                She came home and told me she heard a neighbor beating up his dog
-                 because it barked at my dog when they walked by from the backyard.
-                   What we can do for that dog?  I think the owner should be punished.
-                   </p>
-                   <div id='bottom'>
-                    <div id='likes'>
-                    <p id='heart'>❤️</p><p>1</p>
-                    </div>
-                    <div id='right'>
-                        <div id='options'>
-                        <FavoriteBorderIcon id='choose liked' />
-                        <p>Like</p>
-                        </div>
-                        <div id='options'>
-                        <ChatBubbleOutlineIcon id='choose' />
-                        <p>Comment</p>
-                        </div>
-                        <div id='options'>
-                        <ShareIcon id='choose' />
-                        <p>Share</p>
-                        </div>
-                    </div>
-                   </div>
-                   <hr></hr>
-                   <div id='comment'>
-                   <span>K</span>
-                   <input type='text' placeholder='Add a comment'></input>
-                   </div>
-            </div>
-            <div id='posted'>
-                <div id='upper'>
-                    <span>K</span>
-                    <div id='details'>
-                        <p id='name'>K.M</p>
-                        <p id='address'>Fremont, CA . Edited 1w. 🌐</p>
-                    </div>
-                     <MoreHorizIcon  id='dot'/>
-                </div>
-                <p id='para'>My daughter just took our dog out for their usual evening walk. 
-                She came home and told me she heard a neighbor beating up his dog
-                 because it barked at my dog when they walked by from the backyard.
-                   What we can do for that dog?  I think the owner should be punished.
-                   </p>
-                   <div id='bottom'>
-                    <div id='likes'>
-                    <p id='heart'>❤️</p><p>1</p>
-                    </div>
-                    <div id='right'>
-                        <div id='options'>
-                        <FavoriteBorderIcon id='choose liked' />
-                        <p>Like</p>
-                        </div>
-                        <div id='options'>
-                        <ChatBubbleOutlineIcon id='choose' />
-                        <p>Comment</p>
-                        </div>
-                        <div id='options'>
-                        <ShareIcon id='choose' />
-                        <p>Share</p>
-                        </div>
-                    </div>
-                   </div>
-                   <hr></hr>
-                   <div id='comment'>
-                   <span>K</span>
-                   <input type='text' placeholder='Add a comment'></input>
-                   </div>
-            </div>
+            </div>))}
             </div>
             <div id='r'>
 
