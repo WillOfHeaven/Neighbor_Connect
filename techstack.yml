@@ -2,7 +2,7 @@ repo_name: WillOfHeaven/EcoBeats
 report_id: 13b0aee65548449bbce9849ce755edff
 version: 0.1
 repo_type: Public
-timestamp: '2024-02-20T10:14:19+00:00'
+timestamp: '2024-02-29T20:10:34+00:00'
 requested_by: WillOfHeaven
 provider: github
 branch: master
@@ -2799,12 +2799,12 @@ tools:
   last_updated_by: WillOfHeaven
   last_updated_on: 2023-05-21 11:31:03.000000000 Z
   vulnerabilities:
-  - name: NPM IP package vulnerable to Server-Side Request Forgery (SSRF) attacks
+  - name: NPM IP package incorrectly identifies some private IP addresses as public
     cve_id: CVE-2023-42282
     cve_url: https://github.com/advisories/GHSA-78xj-cgh5-2h22
     detected_date: Feb 10
-    severity: high
-    first_patched: 
+    severity: moderate
+    first_patched: 2.0.1
 - name: ipaddr.js
   description: A library for manipulating IPv4 and IPv6 addresses in JavaScript
   package_url: https://www.npmjs.com/ipaddr.js
