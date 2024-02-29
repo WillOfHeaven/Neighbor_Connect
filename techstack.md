@@ -136,7 +136,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [WillOfHeaven/EcoBeats](https://github.com/WillOfHeaven/EcoBeats)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|322<br/>Tools used|02/20/24 <br/>Report generated|
+|322<br/>Tools used|02/29/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -880,7 +880,7 @@ Full tech stack [here](/techstack.md)
 |[immutable](https://www.npmjs.com/immutable)|v3.7.6|05/21/23|WillOfHeaven |MIT|N/A|
 |[in-publish](https://www.npmjs.com/in-publish)|v2.0.0|05/21/23|WillOfHeaven |ISC|N/A|
 |[inherits](https://www.npmjs.com/inherits)|v2.0.4|05/21/23|WillOfHeaven |ISC|N/A|
-|[ip](https://www.npmjs.com/ip)|v2.0.0|05/21/23|WillOfHeaven |MIT|[CVE-2023-42282](https://github.com/advisories/GHSA-78xj-cgh5-2h22) (High)|
+|[ip](https://www.npmjs.com/ip)|v2.0.0|05/21/23|WillOfHeaven |MIT|[CVE-2023-42282](https://github.com/advisories/GHSA-78xj-cgh5-2h22) (Moderate)|
 |[ipaddr.js](https://www.npmjs.com/ipaddr.js)|v2.0.1|05/21/23|WillOfHeaven |MIT|N/A|
 |[isarray](https://www.npmjs.com/isarray)|v1.0.0|05/21/23|WillOfHeaven |MIT|N/A|
 |[istanbul-instrumenter-loader](https://www.npmjs.com/istanbul-instrumenter-loader)|v3.0.1|05/21/23|WillOfHeaven |MIT|N/A|
